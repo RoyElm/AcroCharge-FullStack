@@ -1,0 +1,14 @@
+.Header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: slateblue;
+}
+.Header > nav,.Header > nav > a {
+    padding: 2rem;
+}
+
+.Header > nav > a {
+    text-decoration: none;
+    color: white;
+}
