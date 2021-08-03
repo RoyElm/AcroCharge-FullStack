@@ -7,7 +7,7 @@ import { errorsService } from "../../../Services/GlobalServices/GlobalErrorsServ
 import { GlobalPaths } from "../../../Services/GlobalServices/GlobalPaths";
 import { getAllCustomersAsync } from "../../../Services/Http_Services/Customers_service";
 import { createNewTransactionAsync } from "../../../Services/Http_Services/Transactions_service";
-import "./AddTransaction.css";
+import "./AddTransaction.scss";
 
 function AddTransaction() {
 

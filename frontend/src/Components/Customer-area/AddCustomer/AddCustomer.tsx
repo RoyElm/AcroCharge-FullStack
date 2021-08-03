@@ -5,7 +5,7 @@ import { CustomerModel } from "../../../Models/Customer.model";
 import { errorsService } from "../../../Services/GlobalServices/GlobalErrorsService";
 import { GlobalPaths } from "../../../Services/GlobalServices/GlobalPaths";
 import { createNewCustomerAsync } from "../../../Services/Http_Services/Customers_service";
-import "./AddCustomer.css";
+import "./AddCustomer.scss";
 
 function AddCustomer() {
 
@@ -23,6 +23,7 @@ function AddCustomer() {
     }
 
     const handleErrorByName = (name: string) => {
+
         const errorType = errors[name].type;
         if (errorType === 'required') return `${name} is required!`;
 
@@ -157,7 +158,7 @@ function AddCustomer() {
                             </td>
                         </tr>
                         {
-                            errors?.street &&
+                            errors?.gender &&
                             <tr>
                                 <td></td>
                                 <td className="error">

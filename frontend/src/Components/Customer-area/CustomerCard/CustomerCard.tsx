@@ -4,7 +4,7 @@ import { CustomerModel } from "../../../Models/Customer.model";
 import { errorsService } from "../../../Services/GlobalServices/GlobalErrorsService";
 import { GlobalPaths } from "../../../Services/GlobalServices/GlobalPaths";
 import { deleteCustomerByIdAsync } from "../../../Services/Http_Services/Customers_service";
-import './CustomerCard.css';
+import './CustomerCard.scss';
 
 interface ICustomerCard {
     customer: CustomerModel;

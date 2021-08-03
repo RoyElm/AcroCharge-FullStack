@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './index.scss';
 import Layout from './Components/Layout-area/Layout/Layout';
 import reportWebVitals from './reportWebVitals';
 

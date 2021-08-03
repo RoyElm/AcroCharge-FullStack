@@ -5,7 +5,7 @@ import { errorsService } from "../../../Services/GlobalServices/GlobalErrorsServ
 import { GlobalPaths } from "../../../Services/GlobalServices/GlobalPaths";
 import { getAllTransactionsAsync } from "../../../Services/Http_Services/Transactions_service";
 import TransactionCard from "../TransactionCard/TransactionCard";
-import './TransactionList.css';
+import './TransactionList.scss';
 
 function TransactionsList(): JSX.Element {
     const [transactions, setTransactions] = useState<TransactionModel[]>([]);

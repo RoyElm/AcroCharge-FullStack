@@ -1,0 +1,12 @@
+.Layout {
+    box-sizing: border-box;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 15% 79% 3%;
+    overflow: auto;
+}
+
+.Layout > *{
+    grid-column: span 6;
+}

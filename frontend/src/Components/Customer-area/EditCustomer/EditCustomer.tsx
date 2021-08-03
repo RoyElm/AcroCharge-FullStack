@@ -5,7 +5,7 @@ import { CustomerModel } from "../../../Models/Customer.model";
 import { errorsService } from "../../../Services/GlobalServices/GlobalErrorsService";
 import { GlobalPaths } from "../../../Services/GlobalServices/GlobalPaths";
 import { getCustomerByIdAsync, updateCustomerAsync } from "../../../Services/Http_Services/Customers_service";
-import "./EditCustomer.css";
+import "./EditCustomer.scss";
 
 function EditCustomer() {
 
@@ -175,7 +175,7 @@ function EditCustomer() {
                                     </td>
                                 </tr>
                                 {
-                                    errors?.street &&
+                                    errors?.gender &&
                                     <tr>
                                         <td></td>
                                         <td className="error">

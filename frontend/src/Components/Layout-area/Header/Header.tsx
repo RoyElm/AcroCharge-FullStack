@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { GlobalPaths } from "../../../Services/GlobalServices/GlobalPaths";
-import "./Header.css";
+import "./Header.scss";
 
 function Header(): JSX.Element {
 

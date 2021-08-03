@@ -4,7 +4,7 @@ import { TransactionModel } from "../../../Models/Transaction.model";
 import { errorsService } from "../../../Services/GlobalServices/GlobalErrorsService";
 import { GlobalPaths } from "../../../Services/GlobalServices/GlobalPaths";
 import { deleteTransactionByIdAsync } from "../../../Services/Http_Services/Transactions_service";
-import './TransactionCard.css';
+import './TransactionCard.scss';
 
 interface ITransactionCard {
     transaction: TransactionModel;

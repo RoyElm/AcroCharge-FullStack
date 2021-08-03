@@ -1,0 +1,23 @@
+.CustomerList {
+    position: relative;
+
+    .addCustomer {
+        text-decoration: none;
+        background-color: slateblue; 
+        border: none;
+        color: white;
+        padding: 0.5rem;
+        text-align: center;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+
+    h2 {
+        margin-top: 2rem;
+    }
+}
+.Customers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

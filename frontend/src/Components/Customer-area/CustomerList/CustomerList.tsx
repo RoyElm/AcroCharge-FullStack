@@ -5,7 +5,7 @@ import { errorsService } from "../../../Services/GlobalServices/GlobalErrorsServ
 import { GlobalPaths } from "../../../Services/GlobalServices/GlobalPaths";
 import { getAllCustomersAsync } from "../../../Services/Http_Services/Customers_service";
 import CustomerCard from "../CustomerCard/CustomerCard";
-import './CustomerList.css';
+import './CustomerList.scss';
 
 function CustomerList(): JSX.Element {
     const [customers, setCustomers] = useState<CustomerModel[]>([]);
