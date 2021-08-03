@@ -55,7 +55,7 @@ function AddTransaction() {
     return (
         <div className="AddTransaction">
             {
-                customers.length && <>
+                customers.length ? <>
                     <h2>Create New Transaction</h2>
                     <form onSubmit={handleSubmit(submit)}>
                         <table>
@@ -147,7 +147,8 @@ function AddTransaction() {
 
                         </table>
                     </form>
-                </>
+                </> :
+                <></>
             }
         </div>
     );

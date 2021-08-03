@@ -29,10 +29,16 @@ function CustomerList(): JSX.Element {
     return (
         <div className="CustomerList">
             <NavLink className="addCustomer" to={GlobalPaths.customerHandlerUrl + "/add"}>Add Customer</NavLink>
-            <h2>Customer List</h2>
-            <div className="Customers">
-                {customers.map((customer, index) => <CustomerCard key={index} customer={customer} deleteCustomer={deleteCustomer} />)}
-            </div>
+            {customers.length ? <>
+                <h2>Customer List</h2>
+                <div className="Customers">
+                    {customers.map((customer, index) => <CustomerCard key={index} customer={customer} deleteCustomer={deleteCustomer} />)}
+                </div>
+            </> :
+                <>
+                    <h2>There is no customers please add some</h2>
+                </>
+            }
         </div>
     );
 
