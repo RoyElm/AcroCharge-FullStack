@@ -4,7 +4,7 @@ const transactionController = require("./controller-layer/transactions-controlle
 const cors = require("cors");
 const server = express();
 
-//Enabling cors to access from all ip address, allowing json as response and allowing file uploading.
+//Enabling cors to access from all ip address, allowing json as response.
 server.use(cors())
 server.use(express.json());
 
