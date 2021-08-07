@@ -16,13 +16,13 @@ const TransactionSchema = mongoose.Schema({
         type: String,
         required: [true, "Missing Currency."],
         minLength: [2, "Currency must be minimum 2 chars."],
-        maxLength: [15, "Currency can't exceed 10 chars."],
+        maxLength: [15, "Currency can't exceed 15 chars."],
     },
     credit_card_type: {
         type: String,
         required: [true, "Missing credit card type."],
         minLength: [2, "Credit card type must be minimum 4 chars."],
-        maxLength: [15, "Author can't exceed 15 chars."],
+        maxLength: [15, "Credit card type can't exceed 15 chars."],
     },
     credit_card_number: {
         type: String,
